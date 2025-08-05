@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Trek Ever 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    
+</head>
+<body>
+    
+    <nav>
+        <h2 class="logo">ARYA</h2>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="loadPage('home')">HOME</a></li>
+            <li><a href="javascript:void(0);" onclick="loadPage('about')">ABOUT</a></li>
+            <li><a href="javascript:void(0);" onclick="loadPage('service')">SERVICE</a></li>
+            <li><a href="javascript:void(0);" onclick="loadPage('contact')">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <div>
+            <h3>Let's</h3>
+            <h1>TREK</h1>
+        </div>
+    </div>
+
+    <script>
+        function loadPage(page) {
+            if (page === 'home') {
+                document.getElementById('content').innerHTML = `
+                    <div>
+                        <h3>Let's</h3>
+                        <h1>TREK</h1>
+                    </div>
+                `;
+            } else if (page === 'about') {
+                document.getElementById('content').innerHTML = `
+                    <div class="about-container">
+                        <h2>About Us</h2>
+                        <p>We specialize in providing thrilling trekking experiences around the world. We have a variety of treks that cater to your level and preferences. Our goal is to make your trek enjoyable, safe, and memorable. We believe that a trekking adventure is not just about the destination, but the journey itself. We offer customized packages, experienced guides, and all the necessary services to ensure your trekking experience is smooth and unforgettable.</p>
+                    </div>
+                `;
+            } else if (page === 'service') {
+                document.getElementById('content').innerHTML = `
+                    <div class="container">
+                        <h2>Our Services</h2>
+                        <p>We offer various trekking services, including guided tours, customized itineraries, and travel packages that ensure an unforgettable experience. Whether you're a beginner or an experienced trekker, we have something for everyone.This trek offers breathtaking views of the world’s highest peak,diverse landscapes, including cloud forests, alpine tundra, and beautiful mountain views.</p>
+                
+                
+                    </div>
+                `;
+            } else if (page === 'contact') {
+                document.getElementById('content').innerHTML = `
+                    <div class="contact-container">
+                        <h2>Contact Us</h2>
+                        <p>If you have any questions about our trekking services, want to learn more about a particular trek, or would like to book a trekking package, feel free to reach out to us. Our team is happy to assist you and help you plan your next adventure!</p>
+                        <form action="#" method="post" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </form>
+                        <div class="contact-info">
+                            <p><strong>ARYA Treks</strong></p>
+                            <p>Phone: 8799834779</p>
+                            <p>Email: deshpandeaarya9@gmail.com</p>
+                        </div>
+                    </div>
+                `
+            }
+        }
+    </script>
+</body>
+</html>
